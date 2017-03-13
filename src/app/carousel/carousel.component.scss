@@ -1,0 +1,10 @@
+@import '../../assets/styles/_colors.scss';
+
+:host {
+  img {
+      margin: 0 auto;
+  }
+  ngb-carousel {
+    background-color: $secondary-color;
+  }
+}
