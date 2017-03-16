@@ -1,0 +1,37 @@
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<main class="container">
+<section class="movies" id="movies">
+    <h2>{{pageTitle}}</h2>
+	<div class="row">
+		<div class="col-lg-6 col-md-4 col-sm-6" *ngFor="let recipe of recipes">
+    		<article class="card">
+				<header class="title-header">
+					<h3>{{recipe.title}}</h3>
+				</header>
+				<div class="card-block">
+					<div class="img-card">
+						<img src="https://placehold.it/300x250" alt="Recipes" class="w-50" />
+            <ul>
+              <li>3 Eggs</li>
+            </ul>
+					</div>
+					<p class="tagline card-text text-xs-center">{{recipe.body}}</p>
+					<a routerLink="/recipe/{{recipe.id}}" class="btn btn-primary btn-block"><i class="fa fa-leanpub"></i> Get Recipe</a>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>
+</main>
+<footer class="footer text-muted text-xs-center text-md-left bg-inverse">
+    <div class="container">
+		<ul class="footer-links">
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Terms</a></li>
+			<li><a href="#">DMCA</a></li>
+		</ul>
+		<p>© 2016 - All rights reserved.</p>
+	</div>
+</footer>

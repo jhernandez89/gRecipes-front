@@ -1,7 +1,11 @@
 @import '../../assets/styles/_colors.scss';
-
+$primaryColor: #19194C;
+$whiteAF: white;
 :host {
   nav {
-    background: $primary-color;
+    background: $primaryColor;
+  }
+  .navText{
+    color: $whiteAF;
   }
 }
