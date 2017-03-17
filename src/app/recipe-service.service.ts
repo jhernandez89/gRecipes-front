@@ -27,5 +27,8 @@ export class RecipeServiceService {
   postRecipe(form) {
     return this.http.post(`https://grecipes.herokuapp.com/recipes`, form, authSetDataOptions)
   }
+  getIngredients() {
+    return this.http.get(`https://grecipes.herokuapp.com/ingredients`).map(response => response.json())
+  }
 
 }

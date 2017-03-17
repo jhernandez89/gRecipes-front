@@ -1,7 +1,7 @@
 import { RecipeServiceService } from './recipe-service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
@@ -15,6 +15,7 @@ import { CourseComponent } from './courses.component';
 import { SingleRecipeComponent } from './single-recipe/single-recipe.component';
 import { AboutComponent } from './about/about.component';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
 
 
 
@@ -29,12 +30,14 @@ import { AddRecipeComponent } from './add-recipe/add-recipe.component';
     SingleRecipeComponent,
     AboutComponent,
     AddRecipeComponent,
+    EditRecipeComponent,
   ],
   imports: [
     router,
     BrowserModule,
     FormsModule,
     NgbModule.forRoot(),
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [RecipeServiceService],

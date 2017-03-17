@@ -1,3 +1,4 @@
+import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { AboutComponent } from './about/about.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
@@ -10,6 +11,7 @@ export const routes: Routes = [
   { path: 'recipe/:id', component: SingleRecipeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'add-recipe', component: AddRecipeComponent },
+  { path: 'edit-recipe', component: EditRecipeComponent },
 ];
 
 
